@@ -37,7 +37,7 @@ Now, in your views/templates/components:
 ### Time Delta in Words
 
 ```hbs
-{{time-delta-in-words completedAt}} {{! => 7 minutes}}
+{{time-delta-in-words completedAt}} {{! => 7 minutes ago}}
 ```
 
 ## License
