@@ -1,4 +1,4 @@
-# Ember CLI Addon Template
+# Ember Dates
 
 An [ember-cli](http://ember-cli.com) addon for dates. This addon includes
 `time-ago-in-words`, `time-ahead-in-words`, `time-delta-in-words`. It uses

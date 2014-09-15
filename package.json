@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-dates",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "An Ember addon for date helpers.",
   "main": "index.js",
   "scripts": {
