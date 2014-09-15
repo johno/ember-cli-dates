@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-cli-addon-template',
+  name: 'ember-cli-dates',
 
   included: function included(app) {
     this.app = app;
