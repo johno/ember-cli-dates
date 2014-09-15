@@ -25,19 +25,19 @@ Now, in your views/templates/components:
 ### Time Ago in Words
 
 ```hbs
-{{time-ago-in-words createdAt}} // => twelve days ago
+{{time-ago-in-words createdAt}} {{! => twelve days ago}}
 ```
 
 ### Time Ahead in Words
 
 ```hbs
-{{time-ahead-in-words toBePublishedAt}} // => in 4 hours
+{{time-ahead-in-words toBePublishedAt}} {{! => in 4 hours}}
 ```
 
 ### Time Delta in Words
 
 ```hbs
-{{time-delta-in-words completedAt}} // => 7 minutes
+{{time-delta-in-words completedAt}} {{! => 7 minutes}}
 ```
 
 ## License
