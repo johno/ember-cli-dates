@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 function timeAgoInWords(date) {
-  return moment(date).fromNow() + ' ago';
+  return moment(date).fromNow();
 }
 
 export { timeAgoInWords };
