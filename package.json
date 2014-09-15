@@ -1,0 +1,29 @@
+{
+  "name": "ember-cli-dates",
+  "version": "0.0.1",
+  "description": "An Ember addon for date helpers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ember-cli-dates.git"
+  },
+  "keywords": [
+    "ember-addon",
+    "ember",
+    "ember-cli",
+    "dates",
+    "moment",
+    "time-ago-in-words",
+    "time-ahead-in-words",
+    "time-delta-in-words"
+  ],
+  "bugs": {
+    "url": "https://github.com/johnotander/ember-cli-dates/issues"
+  },
+  "homepage": "https://github.com/johnotander/ember-cli-dates",
+  "author": "John Otander <johnotander@gmail.com> (http://johnotander.com/)",
+  "license": "MIT"
+}
