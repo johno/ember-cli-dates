@@ -1,14 +1,44 @@
 # Ember CLI Addon Template
 
-A template to get me started creating an [ember-cli](http://ember-cli.com) addon.
+An [ember-cli](http://ember-cli.com) addon for dates. This addon includes
+`time-ago-in-words`, `time-ahead-in-words`, `time-delta-in-words`. It uses
+moment.js.
 
 ## Installation
 
-TODO: Fill out installation details.
+First, you need to install moment.js via [bower](http://bower.io):
+
+```
+$ bower install --save moment
+```
+
+Then, install the addon:
+
+```
+npm install --save ember-cli-dates
+```
 
 ## Usage
 
-TODO: Fill out usage details.
+Now, in your views/templates/components:
+
+### Time Ago in Words
+
+```hbs
+{{time-ago-in-words createdAt}} // => twelve days ago
+```
+
+### Time Ahead in Words
+
+```hbs
+{{time-ahead-in-words toBePublishedAt}} // => in 4 hours
+```
+
+### Time Delta in Words
+
+```hbs
+{{time-delta-in-words completedAt}} // => 7 minutes
+```
 
 ## License
 
