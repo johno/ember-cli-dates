@@ -4,8 +4,7 @@ import {
 
 module('TimeDeltaInWordsHelper');
 
-// Replace this with your real tests.
-test('it works', function() {
-  var result = timeDeltaInWords(42);
-  ok(result);
+test('it produces the correct moment string for past date', function() {
+  var result = timeDeltaInWords(window.moment().seconds(-31));
+  equal(result, 'a minute ago');
 });

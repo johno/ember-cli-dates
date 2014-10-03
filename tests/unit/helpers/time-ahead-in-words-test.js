@@ -4,8 +4,7 @@ import {
 
 module('TimeAheadInWordsHelper');
 
-// Replace this with your real tests.
-test('it works', function() {
-  var result = timeAheadInWords(42);
-  ok(result);
+test('it produces the correct moment string', function() {
+  var result = timeAheadInWords(window.moment().seconds(51));
+  equal(result, 'in a few seconds');
 });

@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 function timeAheadInWords(date) {
-  return moment(date).fromNow();
+  return window.moment(date).fromNow();
 }
 
 export { timeAheadInWords };

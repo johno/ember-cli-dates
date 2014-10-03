@@ -4,8 +4,7 @@ import {
 
 module('TimeAgoInWordsHelper');
 
-// Replace this with your real tests.
-test('it works', function() {
-  var result = timeAgoInWords(42);
-  ok(result);
+test('it produces the correct moment string', function() {
+  var result = timeAgoInWords(window.moment().seconds(-31));
+  equal(result, 'a minute ago');
 });
