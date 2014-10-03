@@ -1,12 +1,16 @@
-'use strict';
+'user strict';
+
+var path = require('path');
 
 module.exports = {
   name: 'ember-cli-dates',
 
-  included: function included(app) {
-    this.app = app;
-    this._super.included(app);
+  blueprintsPath: function() {
+    return path.join(__dirname, 'blueprints');
+  },
 
-    app.import("bower_components/moment/moment.js");
+  included: function(app) {
+    this._super.included(app);
+    this.app.import(app.bowerDirectory + '/momentjs/moment.js');
   }
 };
