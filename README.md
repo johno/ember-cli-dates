@@ -6,13 +6,7 @@ moment.js.
 
 ## Installation
 
-First, you need to install moment.js via [bower](http://bower.io):
-
-```
-$ bower install --save moment
-```
-
-Then, install the addon:
+Install the addon from within the directory of your ember-cli app:
 
 ```
 npm install --save ember-cli-dates
