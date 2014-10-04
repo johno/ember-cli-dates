@@ -1,5 +1,9 @@
 # Ember Dates
 
+Date helpers for your Ember app.
+
+[![Build](https://travis-ci.org/johnotander/ember-cli-dates.svg?branch=master)](https://travis-ci.org/johnotander/ember-cli-dates)
+
 An [ember-cli](http://ember-cli.com) addon for dates. This addon includes
 `time-ago-in-words`, `time-ahead-in-words`, `time-delta-in-words`. It uses
 moment.js.
