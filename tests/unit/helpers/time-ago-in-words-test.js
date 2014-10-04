@@ -5,6 +5,6 @@ import {
 module('TimeAgoInWordsHelper');
 
 test('it produces the correct moment string', function() {
-  var result = timeAgoInWords(window.moment().seconds(-31));
-  equal(result, 'a minute ago');
+  var result = timeAgoInWords(window.moment().seconds(-60*60*25));
+  equal(result, 'a day ago');
 });

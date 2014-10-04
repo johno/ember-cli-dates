@@ -5,6 +5,11 @@ import {
 module('TimeDeltaInWordsHelper');
 
 test('it produces the correct moment string for past date', function() {
-  var result = timeDeltaInWords(window.moment().seconds(-31));
-  equal(result, 'a minute ago');
+  var result = timeDeltaInWords(window.moment().seconds(-60*60*25));
+  equal(result, 'a day ago');
+});
+
+test('it produces the correct moment string', function() {
+  var result = timeAheadInWords(window.moment().seconds(60*60*25));
+  equal(result, 'in a day');
 });
