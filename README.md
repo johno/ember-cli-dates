@@ -26,22 +26,36 @@ npm install --save ember-cli-dates
 
 Now, in your views/templates/components:
 
-### Time Ago in Words
+### Time Deltas
+
+#### Time Ago in Words
 
 ```hbs
 {{time-ago-in-words createdAt}} {{! => twelve days ago}}
 ```
 
-### Time Ahead in Words
+#### Time Ahead in Words
 
 ```hbs
 {{time-ahead-in-words toBePublishedAt}} {{! => in 4 hours}}
 ```
 
-### Time Delta in Words
+#### Time Delta in Words
 
 ```hbs
 {{time-delta-in-words completedAt}} {{! => 7 minutes ago}}
+```
+
+### Custom Format
+
+```hbs
+{{time-format updatedAt 'l'}} {{! => 10/9/2014}}
+```
+
+### Day of the Week
+
+```hbs
+{{day-of-the-week someDate}} {{! => Friday}}
 ```
 
 ## License
