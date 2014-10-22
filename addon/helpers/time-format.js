@@ -6,7 +6,7 @@ function timeFormat(date, format) {
   var output;
 
   if (length === 1) {
-    throw new TypeError('Invalid Number of arguments, expected atleast 1');
+    throw new TypeError('Invalid Number of arguments, expected at least 1');
   } else if (length === 2) {
     output = 'LL';
   } else {
