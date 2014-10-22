@@ -62,6 +62,11 @@ Now, in your views/templates/components:
 
 MIT
 
+## Acknowledgements
+
+This addon has stayed up to date with the Ember CLI by following one of Stefan Penner's repos:
+<https://github.com/stefanpenner/ember-moment>
+
 ## Contributing
 
 1. Fork it
