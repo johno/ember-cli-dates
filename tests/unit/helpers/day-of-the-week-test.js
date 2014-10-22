@@ -1,10 +1,23 @@
-import {
-  dayOfTheWeek
-} from 'ember-cli-dates/helpers/day-of-the-week';
+import moment from 'moment';
+import { dayOfTheWeek } from 'ember-cli-dates/helpers/day-of-the-week';
 
 module('DayOfTheWeekHelper');
 
-// Replace this with your real tests.
-test('it works', function() {
-  equal(dayOfTheWeek('10/09/2014', 'dddd'), 'Thursday');
+var FAKE_HBS_CONTEXT = {};
+
+var dateJanuary = new Date(2014, 0, 1);
+var momentJanuary = moment('2014-01-01');
+var literalJanuary = '2014/01/01';
+
+test('one arg (date)', function() {
+  equal(dayOfTheWeek(dateJanuary, FAKE_HBS_CONTEXT), 'Wednesday');
 });
+
+test('one arg (moment)', function() {
+  equal(dayOfTheWeek(momentJanuary, FAKE_HBS_CONTEXT), 'Wednesday');
+});
+
+test('one arg (literal)', function() {
+  equal(dayOfTheWeek(literalJanuary, FAKE_HBS_CONTEXT), 'Wednesday');
+});
+
