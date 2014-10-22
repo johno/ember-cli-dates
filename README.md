@@ -5,21 +5,21 @@ Date helpers for your Ember app.
 [![Build](https://travis-ci.org/johnotander/ember-cli-dates.svg?branch=master)](https://travis-ci.org/johnotander/ember-cli-dates)
 
 An [ember-cli](http://ember-cli.com) addon for dates. This addon includes
-`time-ago-in-words`, `time-ahead-in-words`, `time-delta-in-words`. It uses
+`time-ago-in-words`, `time-ahead-in-words`, `time-delta-in-words`, `time-format`, `day-of-the-week`. It uses
 moment.js.
 
 ## Installation
 
-First, you need to install moment.js via [bower](http://bower.io):
-
-```
-$ bower install --save moment
-```
-
-Then, install the addon:
+First, you need to install the addon:
 
 ```
 npm install --save ember-cli-dates
+```
+
+Then, install dependencies:
+
+```
+ember generate ember-cli-dates
 ```
 
 ## Usage
@@ -65,9 +65,11 @@ MIT
 ## Contributing
 
 1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+2. npm install
+3. bower install
+4. Create your feature branch (`git checkout -b my-new-feature`)
+5. Commit your changes (`git commit -am 'Add some feature'`)
+6. Push to the branch (`git push origin my-new-feature`)
+7. Create new Pull Request
 
 Crafted with <3 by [John Otander](http://johnotander.com).
