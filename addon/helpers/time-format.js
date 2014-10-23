@@ -1,19 +1,19 @@
 import Ember from 'ember';
 import moment from 'moment';
+import timeLocale from 'ember-cli-dates/utils/time-locale';
+import validArgs from 'ember-cli-dates/utils/valid-args';
 
-function timeFormat(date, format) {
-  var length = arguments.length;
-  var output;
+function timeFormat(date, optionalFormat, optionalLocale) {
+  validArgs(arguments, 'time-format');
 
-  if (length === 1) {
-    throw new TypeError('Invalid Number of arguments, expected at least 1');
-  } else if (length === 2) {
-    output = 'LL';
-  } else {
-    output = format;
+  var locale = timeLocale(optionalLocale),
+      format = 'LL';
+
+  if (Ember.typeOf(optionalFormat) === 'string') {
+    format = optionalFormat;
   }
 
-  return moment(date).format(output);
+  return moment(date).locale(locale).format(format);
 }
 
 export {

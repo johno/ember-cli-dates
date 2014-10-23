@@ -3,11 +3,12 @@ import { timeFormat } from 'ember-cli-dates/helpers/time-format';
 
 module('TimeFormatHelper');
 
-var FAKE_HBS_CONTEXT = {};
+moment.locale('en');
 
-var dateJanuary = new Date(2014, 0, 1);
-var momentJanuary = moment('2014-01-01');
-var literalJanuary = '2014/01/01';
+var FAKE_HBS_CONTEXT = {},
+    dateJanuary      = new Date(2014, 0, 1),
+    momentJanuary    = moment('2014-01-01'),
+    literalJanuary   = '2014/01/01';
 
 test('one arg (date)', function() {
   equal(timeFormat(dateJanuary, FAKE_HBS_CONTEXT), 'January 1, 2014');
@@ -32,3 +33,8 @@ test('two args (moment, format)', function() {
 test('two args (literal, format)', function() {
   equal(timeFormat(literalJanuary, 'LLL', FAKE_HBS_CONTEXT), 'January 1, 2014 12:00 AM');
 });
+
+test('locale pt-br', function() {
+  equal(timeFormat(dateJanuary, 'LL', 'pt-br', FAKE_HBS_CONTEXT), '1 de janeiro de 2014');
+});
+

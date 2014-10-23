@@ -17,4 +17,7 @@ var app = new EmberAddon();
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
+// Import this locale to test dummy app
+app.import('bower_components/moment/locale/pt-br.js');
+
 module.exports = app.toTree();

@@ -17,3 +17,4 @@ export default {
   name: 'ember-cli-dates',
   initialize: initialize
 };
+
