@@ -1,7 +1,7 @@
 import Ember from 'ember';
 import moment from 'moment';
-import timeLocale from '../utils/time-locale';
-import validArgs from '../utils/valid-args';
+import timeLocale from 'ember-cli-dates/utils/time-locale';
+import validArgs from 'ember-cli-dates/utils/valid-args';
 
 function dayOfTheWeek(date, optionalLocale) {
   validArgs(arguments, 'day-of-the-week');
