@@ -67,7 +67,7 @@ Now, in your views/templates/components:
 
 ## Locale Support
 
-In order to add local support, you need to import the locale file in your app's `Brocfile.js`:
+In order to add locale support, you need to import the locale file in your app's `Brocfile.js`:
 
 ```js
 app.import(app.bowerDirectory + '/moment/locale/pt-br.js');
