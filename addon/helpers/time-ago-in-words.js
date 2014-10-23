@@ -1,8 +1,14 @@
 import Ember from 'ember';
 import moment from 'moment';
+import timeLocale from '../utils/time-locale';
+import validArgs from '../utils/valid-args';
 
-function timeAgoInWords(date) {
-  return moment(date).fromNow();
+function timeAgoInWords(date, optionalLocale) {
+  validArgs(arguments, 'time-ago-in-words');
+
+  var locale = timeLocale(optionalLocale);
+
+  return moment(date).locale(locale).fromNow();
 }
 
 export { timeAgoInWords };
