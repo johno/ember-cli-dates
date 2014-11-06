@@ -6,6 +6,8 @@ import validArgs from 'ember-cli-dates/utils/valid-args';
 function timeFormat(date, optionalFormat, optionalLocale) {
   validArgs(arguments, 'time-format');
 
+  if (Ember.isBlank(date)) { return ''; }
+
   var locale = timeLocale(optionalLocale),
       format = 'LL';
 
