@@ -6,6 +6,8 @@ import validArgs from '../utils/valid-args';
 function timeAgoInWords(date, optionalLocale) {
   validArgs(arguments, 'time-ago-in-words');
 
+  if (Ember.isBlank(date)) { return ''; }
+
   var locale = timeLocale(optionalLocale);
 
   return moment(date).locale(locale).fromNow();

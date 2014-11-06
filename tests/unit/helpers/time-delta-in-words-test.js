@@ -21,3 +21,11 @@ test('locale pt-br', function() {
   equal(timeDeltaInWords(dateYesterday, 'pt-br', FAKE_HBS_CONTEXT), 'um dia atrás');
 });
 
+test('null date', function() {
+  equal(timeDeltaInWords(null, FAKE_HBS_CONTEXT), '');
+});
+
+
+test('blank date', function() {
+  equal(timeDeltaInWords(' ', FAKE_HBS_CONTEXT), '');
+});

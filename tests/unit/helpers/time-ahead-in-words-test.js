@@ -21,3 +21,11 @@ test('locale pt-br', function() {
   equal(timeAheadInWords(dateTomorrow, 'pt-br', FAKE_HBS_CONTEXT), 'em um dia');
 });
 
+test('null date', function() {
+  equal(timeAheadInWords(null, FAKE_HBS_CONTEXT), '');
+});
+
+
+test('blank date', function() {
+  equal(timeAheadInWords(' ', FAKE_HBS_CONTEXT), '');
+});

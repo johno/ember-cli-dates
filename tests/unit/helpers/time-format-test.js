@@ -38,3 +38,11 @@ test('locale pt-br', function() {
   equal(timeFormat(dateJanuary, 'LL', 'pt-br', FAKE_HBS_CONTEXT), '1 de janeiro de 2014');
 });
 
+test('null date', function() {
+  equal(timeFormat(null, FAKE_HBS_CONTEXT), '');
+});
+
+
+test('blank date', function() {
+  equal(timeFormat(' ', FAKE_HBS_CONTEXT), '');
+});

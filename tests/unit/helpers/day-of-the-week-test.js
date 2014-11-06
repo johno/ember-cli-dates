@@ -26,3 +26,11 @@ test('locale pt-br', function() {
   equal(dayOfTheWeek(dateJanuary, 'pt-br', FAKE_HBS_CONTEXT), 'quarta-feira');
 });
 
+test('null date', function() {
+  equal(dayOfTheWeek(null, FAKE_HBS_CONTEXT), '');
+});
+
+
+test('blank date', function() {
+  equal(dayOfTheWeek(' ', FAKE_HBS_CONTEXT), '');
+});

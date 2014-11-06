@@ -6,6 +6,8 @@ import validArgs from '../utils/valid-args';
 function dayOfTheWeek(date, optionalLocale) {
   validArgs(arguments, 'day-of-the-week');
 
+  if (Ember.isBlank(date)) { return ''; }
+
   var locale = timeLocale(optionalLocale);
 
   return moment(date).locale(locale).format('dddd');
