@@ -25,7 +25,6 @@ test('null date', function() {
   equal(timeAgoInWords(null, FAKE_HBS_CONTEXT), '');
 });
 
-
 test('blank date', function() {
   equal(timeAgoInWords(' ', FAKE_HBS_CONTEXT), '');
 });

@@ -25,7 +25,6 @@ test('null date', function() {
   equal(timeDeltaInWords(null, FAKE_HBS_CONTEXT), '');
 });
 
-
 test('blank date', function() {
   equal(timeDeltaInWords(' ', FAKE_HBS_CONTEXT), '');
 });
