@@ -8,15 +8,6 @@ An [ember-cli](http://ember-cli.com) addon for dates. This addon includes
 `time-ago-in-words`, `time-ahead-in-words`, `time-delta-in-words`, `time-format`, `day-of-the-week`. It uses
 moment.js.
 
-#### With locale support:
-
-_Thanks to @leandrocp._
-
-```hbs
-{{time-format createdAt 'LLLL' 'pt-br'}}
-{{time-ahead-in-words nextHour 'pt-br'}}
-```
-
 ## Installation
 
 First, you need to install the addon:
@@ -73,6 +64,13 @@ In order to add locale support, you need to import the locale file in your app's
 
 ```js
 app.import(app.bowerDirectory + '/moment/locale/pt-br.js');
+```
+
+You then have the ability to specify any imported locale with:
+
+```hbs
+{{time-format createdAt 'LLLL' 'pt-br'}}
+{{time-ahead-in-words nextHour 'pt-br'}}
 ```
 
 ## License
