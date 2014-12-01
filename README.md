@@ -8,7 +8,9 @@ An [ember-cli](http://ember-cli.com) addon for dates. This addon includes
 `time-ago-in-words`, `time-ahead-in-words`, `time-delta-in-words`, `time-format`, `day-of-the-week`. It uses
 moment.js.
 
-Now with locale support (thanks to @leandrocp)!:
+#### With locale support:
+
+_Thanks to @leandrocp._
 
 ```hbs
 {{time-format createdAt 'LLLL' 'pt-br'}}
