@@ -1,12 +1,11 @@
 # Ember Dates
 
-Date helpers for your Ember app.
-
 [![Build](https://travis-ci.org/johnotander/ember-cli-dates.svg?branch=master)](https://travis-ci.org/johnotander/ember-cli-dates)
 
-An [ember-cli](http://ember-cli.com) addon for dates. This addon includes
-`time-ago-in-words`, `time-ahead-in-words`, `time-delta-in-words`, `time-format`, `day-of-the-week`. It uses
-moment.js.
+Date helpers for your Ember app, integrates with the [ember-cli](http://ember-cli.com).
+
+This addon includes `time-ago-in-words`, `time-ahead-in-words`, `time-delta-in-words`,
+`time-format`, `day-of-the-week`. It uses moment.js.
 
 ## Installation
 
