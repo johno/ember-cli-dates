@@ -1,6 +1,7 @@
 {
   "name": "ember-cli-dates",
-  "version": "0.2.2",
+  "description": "Date helpers for formatting dates in your Ember app",
+  "version": "0.2.3",
   "directories": {
     "doc": "doc",
     "test": "tests"

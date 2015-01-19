@@ -9,16 +9,8 @@ This addon includes `time-ago-in-words`, `time-ahead-in-words`, `time-delta-in-w
 
 ## Installation
 
-First, you need to install the addon:
-
 ```
-npm install --save ember-cli-dates
-```
-
-Then, install dependencies:
-
-```
-ember generate ember-cli-dates
+ember install:addon ember-cli-dates
 ```
 
 ## Usage
