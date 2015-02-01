@@ -1,7 +1,7 @@
 import moment from 'moment';
 import { monthAndYear } from 'ember-cli-dates/helpers/month-and-year';
 
-module('DayOfTheWeekHelper');
+module('MonthAndYearHelper');
 
 moment.locale('en');
 
