@@ -13,8 +13,6 @@ function dayOfTheWeek(date, optionalLocale) {
   return moment(date).locale(locale).format('dddd');
 }
 
-export {
-  dayOfTheWeek
-};
+export { dayOfTheWeek };
 
 export default Ember.Handlebars.makeBoundHelper(dayOfTheWeek);

@@ -18,8 +18,6 @@ function timeFormat(date, optionalFormat, optionalLocale) {
   return moment(date).locale(locale).format(format);
 }
 
-export {
-  timeFormat
-};
+export { timeFormat };
 
 export default Ember.Handlebars.makeBoundHelper(timeFormat);
