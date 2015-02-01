@@ -44,6 +44,7 @@
     "url": "https://github.com/johnotander/ember-cli-dates/issues"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "defaultBlueprint": "ember-cli-dates"
   }
 }
