@@ -5,7 +5,8 @@
 Date helpers for your Ember app, integrates with the [ember-cli](http://ember-cli.com).
 
 This addon includes `time-ago-in-words`, `time-ahead-in-words`, `time-delta-in-words`,
-`time-format`, `day-of-the-week`. It uses moment.js.
+`time-format`, `day-of-the-week`, `date-and-time`, `month-and-day`, `month-and-year`.
+It uses moment.js.
 
 ## Installation
 
