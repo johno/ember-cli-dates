@@ -73,6 +73,8 @@ MIT
 This addon has stayed up to date with the Ember CLI by following one of Stefan Penner's repos:
 <https://github.com/stefanpenner/ember-moment>
 
+Thanks to the [contributors](https://github.com/johnotander/ember-cli-dates/graphs/contributors).
+
 ## Contributing
 
 1. Fork it
