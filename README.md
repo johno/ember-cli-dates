@@ -37,6 +37,27 @@ Now, in your views/templates/components:
 {{time-delta-in-words completedAt}} {{! => 7 minutes ago}}
 ```
 
+#### Month and Day
+
+```hbs
+{{month-and-day completedAt}} {{! => Jan 1st}}
+{{month-and-day completedAt}} {{! => jan 1º}}
+```
+
+#### Month and Year
+
+```hbs
+{{month-and-year completedAt 'pt-br'}} {{! => Jan 2015}}
+```
+
+#### Date and Time
+
+```hbs
+{{date-and-time publishedAt}} {{! January 1, 2014 12:00 AM}}
+{{date-and-time publishedAt 'pt-br'}} {{! 1 de janeiro de 2014 às 00:00}}
+```
+
+
 ### Custom Format
 
 ```hbs
