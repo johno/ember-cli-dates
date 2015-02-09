@@ -107,4 +107,4 @@ Thanks to the [contributors](https://github.com/johnotander/ember-cli-dates/grap
 6. Push to the branch (`git push origin my-new-feature`)
 7. Create new Pull Request
 
-Crafted with <3 by [John Otander](http://johnotander.com).
+Crafted with <3 by [John Otander](http://johnotander.com)([@4lpine](https://twitter.com/4lpine)).

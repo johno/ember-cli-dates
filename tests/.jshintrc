@@ -1,6 +1,5 @@
 {
   "predef": [
-    "moment",
     "document",
     "window",
     "location",
@@ -40,7 +39,6 @@
     "findWithAssert",
     "wait",
     "DS",
-    "keyEvent",
     "isolatedContainer",
     "startApp",
     "andThen",
