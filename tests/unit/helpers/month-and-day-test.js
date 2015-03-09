@@ -1,5 +1,6 @@
 import moment from 'moment';
 import { monthAndDay } from 'ember-cli-dates/helpers/month-and-day';
+import { module, test } from 'qunit';
 
 module('MonthAndDayHelper');
 
@@ -10,26 +11,26 @@ var FAKE_HBS_CONTEXT = {},
     momentJanuary    = moment('2014-01-01'),
     literalJanuary   = '2014/01/01';
 
-test('one arg (date)', function() {
-  equal(monthAndDay(dateJanuary, FAKE_HBS_CONTEXT), 'Jan 1st');
+test('one arg (date)', function(assert) {
+  assert.equal(monthAndDay(dateJanuary, FAKE_HBS_CONTEXT), 'Jan 1st');
 });
 
-test('one arg (moment)', function() {
-  equal(monthAndDay(momentJanuary, FAKE_HBS_CONTEXT), 'Jan 1st');
+test('one arg (moment)', function(assert) {
+  assert.equal(monthAndDay(momentJanuary, FAKE_HBS_CONTEXT), 'Jan 1st');
 });
 
-test('one arg (literal)', function() {
-  equal(monthAndDay(literalJanuary, FAKE_HBS_CONTEXT), 'Jan 1st');
+test('one arg (literal)', function(assert) {
+  assert.equal(monthAndDay(literalJanuary, FAKE_HBS_CONTEXT), 'Jan 1st');
 });
 
-test('locale pt-br', function() {
-  equal(monthAndDay(dateJanuary, 'pt-br', FAKE_HBS_CONTEXT), 'jan 1º');
+test('locale pt-br', function(assert) {
+  assert.equal(monthAndDay(dateJanuary, 'pt-br', FAKE_HBS_CONTEXT), 'jan 1º');
 });
 
-test('null date', function() {
-  equal(monthAndDay(null, FAKE_HBS_CONTEXT), '');
+test('null date', function(assert) {
+  assert.equal(monthAndDay(null, FAKE_HBS_CONTEXT), '');
 });
 
-test('blank date', function() {
-  equal(monthAndDay(' ', FAKE_HBS_CONTEXT), '');
+test('blank date', function(assert) {
+  assert.equal(monthAndDay(' ', FAKE_HBS_CONTEXT), '');
 });

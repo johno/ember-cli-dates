@@ -43,7 +43,7 @@
     "time-delta-in-words"
   ],
   "ember-addon": {
-    "defaultBlueprint": "ember-cli-dates"
+    "defaultBlueprint": "ember-cli-dates",
     "configPath": "tests/dummy/config"
   }
 }
