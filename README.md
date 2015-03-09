@@ -1,6 +1,4 @@
-# Ember Dates
-
-[![Build](https://travis-ci.org/johnotander/ember-cli-dates.svg?branch=master)](https://travis-ci.org/johnotander/ember-cli-dates)
+# ember-cli-dates [![Build](https://travis-ci.org/johnotander/ember-cli-dates.svg?branch=master)](https://travis-ci.org/johnotander/ember-cli-dates)
 
 Date helpers for your Ember app, integrates with the [ember-cli](http://ember-cli.com).
 
