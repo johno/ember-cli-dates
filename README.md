@@ -1,6 +1,6 @@
 # ember-cli-dates [![Build](https://travis-ci.org/johnotander/ember-cli-dates.svg?branch=master)](https://travis-ci.org/johnotander/ember-cli-dates)
 
-Date helpers for your Ember app, integrates with the [ember-cli](http://ember-cli.com).
+Ember date helpers with locale support.
 
 This addon includes `time-ago-in-words`, `time-ahead-in-words`, `time-delta-in-words`,
 `time-format`, `day-of-the-week`, `date-and-time`, `month-and-day`, `month-and-year`.
@@ -56,7 +56,6 @@ Now, in your views/templates/components:
 {{date-and-time publishedAt 'pt-br'}} {{! 1 de janeiro de 2014 às 00:00}}
 ```
 
-
 ### Custom Format
 
 ```hbs
@@ -87,13 +86,6 @@ You then have the ability to specify any imported locale with:
 ## License
 
 MIT
-
-## Acknowledgements
-
-This addon has stayed up to date with the Ember CLI by following one of Stefan Penner's repos:
-<https://github.com/stefanpenner/ember-moment>
-
-Thanks to the [contributors](https://github.com/johnotander/ember-cli-dates/graphs/contributors).
 
 ## Contributing
 
