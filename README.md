@@ -1,4 +1,4 @@
-# ember-cli-dates [![Build](https://travis-ci.org/johnotander/ember-cli-dates.svg?branch=master)](https://travis-ci.org/johnotander/ember-cli-dates)
+# ember-cli-dates [![Build](https://travis-ci.org/johnotander/ember-cli-dates.svg?branch=master)](https://travis-ci.org/johnotander/ember-cli-dates) [![Ember Observer Score](http://emberobserver.com/badges/ember-cli-dates.svg)](http://emberobserver.com/addons/ember-cli-dates)
 
 Ember date helpers with locale support.
 
