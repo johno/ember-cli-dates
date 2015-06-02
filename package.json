@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-dates",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Ember date helpers with locale support.",
   "directories": {
     "doc": "doc",
