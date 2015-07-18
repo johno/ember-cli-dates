@@ -8,6 +8,6 @@ module.exports = {
   },
 
   afterInstall: function() {
-    return this.addBowerPackageToProject('ember-cli-moment-shim');
+    return this.addBowerPackageToProject('ember-cli-moment-shim', '0.0.3');
   }
 };
