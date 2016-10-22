@@ -9,7 +9,7 @@ It uses moment.js.
 ## Installation
 
 ```
-ember install:addon ember-cli-dates
+ember install ember-cli-dates
 ```
 
 ## Usage
